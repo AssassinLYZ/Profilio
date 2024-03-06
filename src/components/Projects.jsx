@@ -13,6 +13,8 @@ export const projects = [
   {
     title: "Wupen",
     url: "http://www.wupen.org/",
+    detail:
+      "https://notion.liuyinze.online/preview/j57dnrvhjhkj3exp3jftzm7xsd6mrdcg",
     image: "projects/wupen.png",
     description:
       "Wupen is an international educational federation for urban planning students, facilitating studies and competition participation. It's the external portal for Academician Wu Zhiqiang's research team at Tongji University. ",
@@ -29,55 +31,71 @@ export const projects = [
   {
     title: "ImageLabel",
     url: "https://imagelabel.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j579g0vb1w9hgczapw3ew166ts6mr86r",
     image: "projects/imageLabel.png",
     description:
       "ImageLabel efficiently annotates images and exports JSON files, serving as datasets for image recognition tasks ...",
   },
   {
     title: "Chat With Pdf",
-    url: "https://imagelabel.liuyinze.online",
+    url: "https://chatwithpdf.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j57d02fgr6zxamnnheejna7ny56mrzfm",
     image: "projects/chatWithPdf.png",
     description:
       "Utilizing the OpenAI interface, this project enables seamless interaction with PDF files, allowing users to engage in unrestricted conversations. ",
   },
   {
     title: "Super Admin",
-    url: "https://imagelabel.liuyinze.online",
+    url: "https://superadmin.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j57ecf93qjp4f8hxeq5pzvn1zd6ms19f",
     image: "projects/superAdmin.png",
     description:
       "SuperAdmin is a template for CMS systems, featuring a variety of components and layouts for rapid CMS development. With responsive design and smooth user experience, it enables seamless navigation and operation.",
   },
   {
     title: "Sudoku",
-    url: "https://imagelabel.liuyinze.online",
+    url: "https://sudoku.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j57f7zaatrf9k6w3kh7mqtf3nx6mr3p8",
     image: "projects/sudoku.png",
     description:
       "Sudoku offers a vast collection of Sudoku puzzles to enjoy in your free time. Challenge yourself with puzzles of varying difficulty levels and indulge in the satisfying logic-solving experience.",
   },
   {
-    title: "pathFind",
-    url: "https://imagelabel.liuyinze.online",
+    title: "PathFind",
+    url: "https://pathfind.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j579stdxwk1jpr5c3mpe3tmvax6ms7p5",
     image: "projects/pathFind.png",
     description:
       "pathFind is a visualization tool showcasing various pathfinding algorithms. It serves as a valuable resource for studying different algorithms, aiding in algorithm comprehension and learning.",
   },
   {
     title: "PeerToPeer",
-    url: "https://imagelabel.liuyinze.online",
+    url: "https://peertopeer.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j57cmtfjdw5tey4gfpwj8z3hp16msfbc",
     image: "projects/PeerToPeer.png",
     description:
       "PeerToPeer is a demo showcase of a WebRTC application, facilitating video calls between two users.",
   },
   {
     title: "AgoraChat",
-    url: "https://imagelabel.liuyinze.online",
+    url: "https://agorachat.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j57b1k8jzv0pdsjcdhk1p8xsnd6msmn1",
     image: "projects/AgoraChat.png",
     description:
       "AgoraChat is a demo showcase of a multi-user chat room built using the Agora SDK. It was developed as part of my learning journey with WebRTC technology.",
   },
   {
     title: "Weather",
-    url: "https://imagelabel.liuyinze.online",
+    url: "https://weather.liuyinze.online",
+    detail:
+      "https://notion.liuyinze.online/preview/j57ctdp8z27rb8pnzkwp0t5wcn6ms90t",
     image: "projects/Weather.png",
     description:
       "Weather is an application that displays weather based on current coordinates. It's my first project while learning Next.js.",
@@ -128,8 +146,8 @@ const Project = (props) => {
         <meshBasicMaterial antialias="true" color="#F7F6E7" transparent />
       </mesh>
       <Image
-        onPointerEnter={() => {
-          console.log(213);
+        onClick={() => {
+          if (project.url) window.open(project.url, "_blank");
         }}
         scale={!isMobile ? [3.5, 2, 1] : [1.8, 1.07, 1]}
         url={project.image}
