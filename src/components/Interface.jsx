@@ -39,6 +39,14 @@ export const Interface = (props) => {
       <SkillsSection />
       <ProjectsSection />
       <ContactSection />
+      <button
+        onClick={() => {
+          window.open("/files/Frontend_Resume_YinzeLiu.pdf", "_blank");
+        }}
+        className="bg-sky-800 fixed bottom-[60px] right-[60px] text-white py-4 px-8 rounded-[20px] font-bold text-lg mt-16  hover:bg-sky-700"
+      >
+        My Resume
+      </button>
     </div>
   );
 };

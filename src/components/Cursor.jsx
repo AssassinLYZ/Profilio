@@ -67,7 +67,7 @@ export const Cursor = () => {
         className={`invisible md:visible  z-50 fixed -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none transition-transform
         ${
           hoverButton
-            ? "bg-transparent border-2 border-indigo-900 w-10 h-10"
+            ? "bg-transparent border-2 border-rose-900 w-10 h-10"
             : "bg-rose-500 w-5 h-5"
         }`}
         ref={cursorOutline}

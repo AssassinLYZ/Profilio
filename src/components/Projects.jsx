@@ -100,6 +100,15 @@ export const projects = [
     description:
       "Weather is an application that displays weather based on current coordinates. It's my first project while learning Next.js.",
   },
+  {
+    title: "High-end Certification",
+    url: "https://lyz-notion.vercel.app/preview/j571v24b2pwcymd5x5mqzthc2n6mrdpq",
+    detail:
+      "https://lyz-notion.vercel.app/preview/j571v24b2pwcymd5x5mqzthc2n6mrdpq",
+    image: "projects/High-endFinance.png",
+    description:
+      "This is a Hybrid page module created during my work at Hithink RoyalFlush company, designed to conduct asset authentication for individuals interested in purchasing specific financial products in compliance with national regulations.",
+  },
 ];
 
 const Project = (props) => {
@@ -170,7 +179,7 @@ const Project = (props) => {
           setIsHovered(false);
           handleHoverOut(textRef1, "black");
         }}
-        maxWidth={2}
+        maxWidth={2.4}
         anchorX={"left"}
         anchorY={"top"}
         fontSize={!isMobile ? 0.24 : 0.15}
