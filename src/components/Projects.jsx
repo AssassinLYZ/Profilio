@@ -120,6 +120,7 @@ const Project = (props) => {
   const bgOpacity = useMotionValue(0.4);
   const textRef1 = useRef();
   const textRef2 = useRef();
+  const textRef3 = useRef();
   useEffect(() => {
     animate(bgOpacity, highlighted ? 0.7 : 0.4);
   }, [highlighted]);
@@ -213,7 +214,7 @@ const Project = (props) => {
         anchorY="top"
         fontSize={!isMobile ? 0.12 : 0.1}
         border={"1px solid black"}
-        position={!isMobile ? [-1.8, -1.5, 0] : [-0.92, -0.82, 0]}
+        position={!isMobile ? [-1.4, -1.5, 0] : [-0.92, -0.82, 0]}
         onPointerOver={(e) => {
           handleHover(textRef2);
         }}
@@ -225,6 +226,27 @@ const Project = (props) => {
         }}
       >
         View Details
+      </Text>
+      <Text
+        ref={textRef3}
+        color={"#E11D48"}
+        maxWidth={2}
+        anchorX="left"
+        anchorY="top"
+        fontSize={!isMobile ? 0.12 : 0.1}
+        border={"1px solid black"}
+        position={!isMobile ? [-1.8, -1.5, 0] : [-0.92, -0.82, 0]}
+        onPointerOver={(e) => {
+          handleHover(textRef3);
+        }}
+        onPointerOut={(e) => {
+          handleHoverOut(textRef3, "#E11D48");
+        }}
+        onClick={() => {
+          if (project.url) window.open(project.url, "_blank");
+        }}
+      >
+        Link
       </Text>
     </motion.group>
   );
