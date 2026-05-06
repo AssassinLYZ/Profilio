@@ -75,7 +75,7 @@ const AboutSection = (props) => {
           delay: 1.5,
         }}
       >
-        I am a frontend developer committed
+        I am a software developer committed
         <br />
         to creating exceptional user experiences and
         <br />
