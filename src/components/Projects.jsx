@@ -37,15 +37,15 @@ export const projects = [
     description:
       "ImageLabel efficiently annotates images and exports JSON files, serving as datasets for image recognition tasks ...",
   },
-  {
-    title: "Chat With Pdf",
-    url: "https://chatwithpdf.liuyinze.online",
-    detail:
-      "https://notion.liuyinze.online/preview/j57d02fgr6zxamnnheejna7ny56mrzfm",
-    image: "projects/chatWithPdf.png",
-    description:
-      "Utilizing the OpenAI interface, this project enables seamless interaction with PDF files, allowing users to engage in unrestricted conversations. ",
-  },
+  // {
+  //   title: "Chat With Pdf",
+  //   url: "https://chatwithpdf.liuyinze.online",
+  //   detail:
+  //     "https://notion.liuyinze.online/preview/j57d02fgr6zxamnnheejna7ny56mrzfm",
+  //   image: "projects/chatWithPdf.png",
+  //   description:
+  //     "Utilizing the OpenAI interface, this project enables seamless interaction with PDF files, allowing users to engage in unrestricted conversations. ",
+  // },
   {
     title: "Super Admin",
     url: "https://superadmin.liuyinze.online",
@@ -73,24 +73,24 @@ export const projects = [
     description:
       "pathFind is a visualization tool showcasing various pathfinding algorithms. It serves as a valuable resource for studying different algorithms, aiding in algorithm comprehension and learning.",
   },
-  {
-    title: "PeerToPeer",
-    url: "https://peertopeer.liuyinze.online",
-    detail:
-      "https://notion.liuyinze.online/preview/j57cmtfjdw5tey4gfpwj8z3hp16msfbc",
-    image: "projects/PeerToPeer.png",
-    description:
-      "PeerToPeer is a demo showcase of a WebRTC application, facilitating video calls between two users.",
-  },
-  {
-    title: "AgoraChat",
-    url: "https://agorachat.liuyinze.online",
-    detail:
-      "https://notion.liuyinze.online/preview/j57b1k8jzv0pdsjcdhk1p8xsnd6msmn1",
-    image: "projects/AgoraChat.png",
-    description:
-      "AgoraChat is a demo showcase of a multi-user chat room built using the Agora SDK. It was developed as part of my learning journey with WebRTC technology.",
-  },
+  // {
+  //   title: "PeerToPeer",
+  //   url: "https://peertopeer.liuyinze.online",
+  //   detail:
+  //     "https://notion.liuyinze.online/preview/j57cmtfjdw5tey4gfpwj8z3hp16msfbc",
+  //   image: "projects/PeerToPeer.png",
+  //   description:
+  //     "PeerToPeer is a demo showcase of a WebRTC application, facilitating video calls between two users.",
+  // },
+  // {
+  //   title: "AgoraChat",
+  //   url: "https://agorachat.liuyinze.online",
+  //   detail:
+  //     "https://notion.liuyinze.online/preview/j57b1k8jzv0pdsjcdhk1p8xsnd6msmn1",
+  //   image: "projects/AgoraChat.png",
+  //   description:
+  //     "AgoraChat is a demo showcase of a multi-user chat room built using the Agora SDK. It was developed as part of my learning journey with WebRTC technology.",
+  // },
   {
     title: "Weather",
     url: "https://weather.liuyinze.online",
